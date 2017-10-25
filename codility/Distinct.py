@@ -1,15 +1,7 @@
 import random
 
 def solution(A):
-	if A:
-		A.sort()
-		result = 1
-		for k in xrange(1, len(A)):
-			if A[k] != A[k - 1]:
-				result += 1
-		return result
-	else:
-		return 0
+	return len(set(A))
 
 
 
