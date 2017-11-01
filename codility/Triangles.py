@@ -4,7 +4,7 @@ def solution(ar):
 	ar.sort()
 
 	for i in xrange(2, len(ar)):
-		if abs(ar[i]) < (abs(ar[i-2]) + abs(ar[i-1])):
+		if ar[i] < ar[i-2] + ar[i-1]:
 			print i
 			return 1
 	return 0
